@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../RecBole-master/.idea/RecBole-master.iml" filepath="$PROJECT_DIR$/../RecBole-master/.idea/RecBole-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/conv_ncf.iml" filepath="$PROJECT_DIR$/.idea/conv_ncf.iml" />
+    </modules>
+  </component>
+</project>

@@ -5,6 +5,7 @@ import time
 from ncf import NeuMF
 #from utils import create_ml_1m_dataset
 from preprocess import dataprocess
+
 def run():
     ###################################### prepare data ###########################################
     _, __, ___, user_test, item_test, neg_item_test, = dataprocess()

@@ -6,9 +6,8 @@ import time
 from ncf import NeuMF
 from torch import nn
 #from utils import create_ml_1m_dataset
-from torch.nn.init import normal_
-from tqdm import tqdm
 from preprocess import dataprocess
+
 def run():
     ###################################### prepare data ###########################################
     # user = torch.tensor([[1],[1],[1],[1],[1],[1],[1],[1],[1],[1],])

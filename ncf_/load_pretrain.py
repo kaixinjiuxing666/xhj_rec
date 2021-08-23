@@ -3,8 +3,8 @@ import numpy as np
 import torch
 import time
 from ncf import NeuMF
-#from utils import create_ml_1m_dataset
 from preprocess import dataprocess
+
 def run():
     ###################################### prepare data ###########################################
     #_, test = create_ml_1m_dataset('./ratings100.dat')

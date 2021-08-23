@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
-
 import torch
 import torch.nn as nn
 from torch.nn.init import normal_
-from recbole.model.layers import MLPLayers
-
-
 
 class NeuMF(nn.Module):
     def __init__(self):

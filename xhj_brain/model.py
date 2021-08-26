@@ -7,8 +7,7 @@ class MLP256(nn.Module):
                                  nn.Linear(32, 128),nn.ReLU(),
                                  nn.Linear(128, 256),nn.ReLU(),
                                  nn.Linear(256, 128),nn.ReLU(),
-                                 nn.Linear(128, 64), nn.ReLU(),
-
+                                 nn.Linear(128, 64),nn.ReLU(),
                                  )
         self.linear = nn.Linear(64, 10)
 
@@ -16,6 +15,7 @@ class MLP256(nn.Module):
         X = self.net(X)
         X = self.linear(X)
         return X
+
 
 
 class MLP512(nn.Module):

@@ -14,7 +14,7 @@ def load_array(data_arrays, batch_size, is_train=True):  # @save
     return data.DataLoader(dataset, batch_size, shuffle=is_train)
 
 batch_size = 20
-epoch_num = 2000
+epoch_num = 1000
 data_iter = load_array((features, labels), batch_size)
 ####################################################################################
 net = MLP256()

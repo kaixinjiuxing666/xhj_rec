@@ -20,12 +20,16 @@ class ConvNCF(nn.Module):
         self.item_embedding = nn.Embedding(9999, 64)
         self.cnn_layers = nn.Sequential(
                       nn.Conv2d(1, 32, kernel_size=(4, 4), stride=(4, 4)),
+                      nn.BatchNorm2d(32),
                       nn.ReLU(),
                       nn.Conv2d(32, 32, kernel_size=(4, 4), stride=(4, 4)),
+                      nn.BatchNorm2d(32),
                       nn.ReLU(),
                       nn. Conv2d(32, 32, kernel_size=(2, 2), stride=(2, 2)),
+                      nn.BatchNorm2d(32),
                       nn.ReLU(),
                       nn.Conv2d(32, 32, kernel_size=(2, 2), stride=(2, 2)),
+                      nn.BatchNorm2d(32),
                       nn.ReLU(),
         )
         self.predict_layers = nn.Sequential(

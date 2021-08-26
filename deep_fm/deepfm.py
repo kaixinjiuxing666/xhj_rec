@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torch.nn.init import normal_
 
-class NeuMF(nn.Module):
+class deepFM(nn.Module):
     def __init__(self):
         super().__init__()
 
@@ -104,7 +104,7 @@ def run():
     user = torch.tensor([[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],])
     item = torch.tensor([[5,6,7,8],[5,6,7,8],[5,6,7,8],[5,6,7,8],[5,6,7,8],[5,6,7,8],[5,6,7,8],[5,6,7,8],[5,6,7,8],[5,6,7,8],])
     neg_item = torch.tensor([[9,9,9,9],[9,9,9,9],[9,9,9,9],[9,9,9,9],[9,9,9,9],[9,9,9,9],[9,9,9,9],[9,9,9,9],[9,9,9,9],[9,9,9,9],])
-    net = NeuMF()
+    net = deepFM()
     pos_pred = - net.eval_pred(user, item)
     neg_pred = - net.eval_pred(user, neg_item)
     output = torch.cat([pos_pred,neg_pred],dim=-1)
